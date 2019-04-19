@@ -8,6 +8,9 @@
         <option value="$PROJECT_DIR$/eurakaclient/pom.xml" />
         <option value="$PROJECT_DIR$/eurekaribbon/pom.xml" />
         <option value="$PROJECT_DIR$/service-feign/pom.xml" />
+        <option value="$PROJECT_DIR$/zuuldemo/pom.xml" />
+        <option value="$PROJECT_DIR$/springconfigdemo/pom.xml" />
+        <option value="$PROJECT_DIR$/configclient/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

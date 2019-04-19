@@ -24,4 +24,8 @@ public class EurakaclientApplication {
     public String sayHi(@RequestParam(value = "uname", defaultValue = "dvalue") String name) {
         return "hi "+name+",port is "+port;
     }
+    @RequestMapping("/sayhello")
+    public String sayHello(@RequestParam(value = "hwords", defaultValue = "dwords") String words){
+        return port+" say "+words;
+    }
 }

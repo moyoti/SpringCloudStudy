@@ -17,7 +17,11 @@ public class HiController {
     @Autowired
     SchualServiceHi schualServiceHi;
     @GetMapping(value = "/hi")
-    public String sayHi(@RequestParam String name){
-        return schualServiceHi.sayHiFromClientOne(name);
+    public String sayHi(@RequestParam String uname){
+        return schualServiceHi.sayHiFromClientOne(uname);
+    }
+    @GetMapping(value = "/sayhello")
+    public String sayHello(@RequestParam String words){
+        return schualServiceHi.sayHelloFromClient(words);
     }
 }
