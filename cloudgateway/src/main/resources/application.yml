@@ -1,0 +1,23 @@
+server:
+  port: 8792
+spring:
+  profiles:
+    active: after_route
+
+---                                                                  #---连接符用来隔开同一个配置文件中的不同配置，spring.profiles为当前部分配置的标识，运行时可通过添加--spring.profiles.active=after_route来启用对应部分的配置
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: after_route                                              #-一般表示当前配置节点下可以配置多个配置，这里ctrl点开routes节点可以看到源码中这里传入的是List，每一个-代表了这个list的一个item
+        uri: http://www.baidu.com
+        order: 0
+        predicates:
+        - Path=/get
+        - After=2020-01-20T17:42:47.789-07:00[America/Denver]
+      - id: header_route
+        uri: http://httpbin.org/get
+        order: 1
+        predicates:
+        - After=2017-01-20T17:42:47.789-07:00[America/Denver]
+  profiles: after_route

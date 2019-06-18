@@ -1,11 +1,25 @@
 server:
-  port: 8763
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
+  port: 8762
+#eureka:
+#  instance:
+#    hostname: localhost
+#  client:
+#    service-url:
+#      defaultZone: http://129.204.207.18:8761/eureka/
 spring:
+  cloud:
+    config:
+      uri: http://localhost:8888/
+      name: application
+      profile: eurakaclient
+      label: master
+    bus:
+      trace:
+        enabled: true
   application:
     name: service-hi
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest

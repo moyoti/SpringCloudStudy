@@ -6,18 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cloudgateway" />
         <module name="configclient" />
         <module name="eurakaclient" />
         <module name="eurakaserver" />
         <module name="eurekaribbon" />
         <module name="eurekaserver" />
         <module name="service-feign" />
-        <module name="springclouddemo" />
         <module name="springconfigdemo" />
         <module name="zuuldemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cloudgateway" target="1.8" />
       <module name="configclient" target="1.8" />
       <module name="eurakaclient" target="1.8" />
       <module name="eurakaserver" target="1.8" />
@@ -26,6 +27,7 @@
       <module name="eurekaserver" target="1.8" />
       <module name="service-feign" target="1.8" />
       <module name="springclouddemo" target="1.8" />
+      <module name="springcloudgateway" target="1.8" />
       <module name="springconfigdemo" target="1.8" />
       <module name="zuuldemo" target="1.8" />
     </bytecodeTargetLevel>
