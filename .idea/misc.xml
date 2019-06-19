@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/configclient/pom.xml" />
         <option value="$PROJECT_DIR$/springcloudgateway/pom.xml" />
         <option value="$PROJECT_DIR$/cloudgateway/pom.xml" />
+        <option value="$PROJECT_DIR$/springbootredis/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

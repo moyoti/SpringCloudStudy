@@ -13,6 +13,7 @@
         <module name="eurekaribbon" />
         <module name="eurekaserver" />
         <module name="service-feign" />
+        <module name="springbootredis" />
         <module name="springconfigdemo" />
         <module name="zuuldemo" />
       </profile>
@@ -26,6 +27,7 @@
       <module name="eurekaribbon" target="1.8" />
       <module name="eurekaserver" target="1.8" />
       <module name="service-feign" target="1.8" />
+      <module name="springbootredis" target="1.8" />
       <module name="springclouddemo" target="1.8" />
       <module name="springcloudgateway" target="1.8" />
       <module name="springconfigdemo" target="1.8" />

@@ -1,0 +1,15 @@
+
+server:
+  port: 8075
+spring:
+  redis:
+    database: 0                                           #指定连接哪一个Redis数据库
+    host: 129.204.207.18
+    port: 6379
+    password: 123456
+  application:
+    name: service-redis
+eureka:
+  client:
+    serviceUrl:
+        defaultZone: http://129.204.207.18:8761/eureka/
